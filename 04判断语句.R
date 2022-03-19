@@ -1,9 +1,11 @@
 # R 语言提供了以下类型的判断语句：  if语句    if...else语句    switch语句
+
 # if
 num1 <- 50L
 if (is.integer(num1)) {
     print("num1 是一个整数")
 }
+
 # if...else
 vec1 <- c("google", "runoob", "taobao")
 if ("weibo" %in% vec1) {
@@ -13,6 +15,7 @@ if ("weibo" %in% vec1) {
 } else {
     print("没有找到")
 }
+
 # switch(expression, case1, case2, case3....)语法格式
 # switch 语句必须遵循下面的规则：
 # nolint switch 语句中的 expression 是一个常量表达式，可以是整数或字符串，如果是整数则返回对应的 case 位置值，如果整数不在位置的范围内则返回 NULL
@@ -35,7 +38,7 @@ print(switch(4,
     "taobao"
 ))
 
-# 如果是字符串返回字符串变量对应的值
+# 如果是字符串则返回字符串变量对应的值
 you_like <- "runoob"
 cs2 <- switch(you_like,
     google = "www.google.com",

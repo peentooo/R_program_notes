@@ -39,6 +39,7 @@ if (TRUE) {
     print(c(all(c(TRUE, TRUE)), all(c(TRUE, FALSE)))) # TRUE FALSE
     print(c(any(c(TRUE, FALSE)), any(c(FALSE, FALSE)))) # TRUE FALSE
 }
+
 # 字符串的操作函数
 if (TRUE) {
     print(toupper("Numb")) # 转换为大写    NUMB
@@ -52,7 +53,8 @@ if (TRUE) {
     print(strsplit("2022;03;15", ";")) # 分隔符拆分字符串    "2022" "03" "15"
     print(gsub("/", "-", "2022/03/15")) # 替换字符串    "2022-03-15"
 }
-# 矩阵
+
+# 矩阵1
 if (TRUE) {
     vector <- c(1, 2, 3, 4, 5, 6)
     print(matrix(vector, 2, 3)) # 按列填充

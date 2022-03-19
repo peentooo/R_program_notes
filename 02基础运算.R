@@ -1,7 +1,8 @@
 # R 语言的比较新的版本也支持=作为赋值符
-# 优先级      ()括号   》   ^乘方   》   %%整除取余 , %/%整除   》   *乘 , /除   》   + , -
+# 优先级       ()括号   》   ^乘方   》   %%整除取余,%/%整除   》   *,/   》   +,-
 var_1 <- (9 %/% 2^2 * 2 + 1)^2
 print(var_1) # 25
+
 # 关系运算符，结果返回布尔值
 if (TRUE) {
     v <- c(2, 4, 6, 9)
@@ -14,6 +15,7 @@ if (TRUE) {
     print(v >= t) # TRUE  TRUE FALSE  TRUE
     print(v <= t) # FALSE  TRUE  TRUE  TRUE
 }
+
 # 逻辑运算符
 if (TRUE) {
     v <- c(3, 1, TRUE, 2 + 3i)
@@ -31,6 +33,7 @@ if (TRUE) {
     tii <- c(0, 3, TRUE, 2 + 3i)
     print(vii || tii) # FALSE
 }
+
 # 其他运算符
 if (TRUE) {
     # 1 到 10 的向量
@@ -47,6 +50,7 @@ if (TRUE) {
     print(t(ma)) # 转置矩阵
     print(t)
 }
+
 # 数学函数
 if (TRUE) {
     # 平方根
@@ -58,10 +62,11 @@ if (TRUE) {
     # 相当于lg
     print(log10(100))
 }
+
 # 取整函数
 if (TRUE) {
     print(round(4.5)) # 四舍五入
     print(round(3.5)) # 取整位是偶数会舍，奇数则遵循真正的“四舍五入”
-    print(ceiling(3.4)) # 向上取整
-    print(floor(3.8)) # 向下取整
+    print(ceiling(3.4)) # 向上取整，天花板取整
+    print(floor(3.8)) # 向下取整，地板砖取整
 }
