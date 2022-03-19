@@ -52,7 +52,7 @@ for (i in ex4) {
 }
 
 # next语句用于跳过当前循环，开始下一次循环（类似其他语言的continue）
-ex5 <- LETTERS[1:5]
+ex5 <- letters[1:5]
 for (i in ex5) {
     if (i == "D") { # D 不会输出，跳过这次循环，进入下一次
         next

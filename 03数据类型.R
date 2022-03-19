@@ -45,7 +45,7 @@ if (TRUE) {
     print(toupper("Numb")) # 转换为大写    NUMB
     print(tolower("Numb")) # 转换为小写    numb
     print(nchar("数据类型", type = "bytes")) # 统计字节长度    8
-    print(nchar("数据类型", type = "chars")) # 统计字符数量    4
+    print(nchar("数据类型", type = "chars")) # 统计字符数量    4    默认为字符数量
     print(substr("1234567890", 2, 6)) # 从2到6截取字符串    "23456"
     print(substring("1234567890", 5)) # 截取字符串，从 5 到结束    "5678790"
     print(as.numeric("12")) # 将字符串转换为数字    12
