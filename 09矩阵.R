@@ -11,9 +11,11 @@
 # byrow 为 TRUE 元素按行排列
 ma1 <- matrix(c(3:14), nrow = 4, byrow = TRUE)
 print(ma1)
+
 # byrow 为 FALSE 元素按列排列
 ma2 <- matrix(c(3:14), nrow = 4, byrow = FALSE)
 print(ma2)
+
 # 定义行和列的名称
 rownames <- c("row1", "row2", "row3", "row4")
 colnames <- c("col1", "col2", "col3")
@@ -25,6 +27,7 @@ print(t(ma3))
 print(ma3[2, 3]) # 获取第二行第三列的元素
 print(ma3[2, ]) # 获取第二行的元素
 print(ma3[, 3]) # 获取第三列的元素
+
 # 大小相同（行数列数都相同）的矩阵之间可以相互加减
 # 相乘当且仅当第一个矩阵的列数等于第二个矩阵的行数
 matrix1 <- matrix(c(7, 9, -1, 4, 2, 3), nrow = 2)

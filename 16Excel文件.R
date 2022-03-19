@@ -5,6 +5,8 @@
 any(grepl("xlsx", installed.packages()))
 # 载入包
 library("xlsx")
+
+
 # 读取 5exceltest.xlsx工作表数据
 data <- read.xlsx("files/5exceltest.xlsx", sheetIndex = 1)
 print(data)

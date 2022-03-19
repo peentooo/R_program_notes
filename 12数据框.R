@@ -30,11 +30,9 @@ print(summary(table1)) # 显示概要
 # 提取指定的列
 name_and_salary <- data.frame(table1$姓名, table1$月薪)
 print(name_and_salary)
-
 # 提取第一行和第三行
 row_1_3 <- table1[c(1, 3), ]
 print(row_1_3)
-
 # 读取第 2 、3 行的第 1 、2 列数据：
 row23_col12 <- table1[c(2, 3), c(1, 2)]
 print(row23_col12)
