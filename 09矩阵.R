@@ -27,6 +27,7 @@ print(t(ma3))
 print(ma3[2, 3]) # 获取第二行第三列的元素
 print(ma3[2, ]) # 获取第二行的元素
 print(ma3[, 3]) # 获取第三列的元素
+print(nrow(ma3)) #查看有几行
 
 # 大小相同（行数列数都相同）的矩阵之间可以相互加减
 # 相乘当且仅当第一个矩阵的列数等于第二个矩阵的行数
@@ -50,7 +51,9 @@ print(result)
 result <- matrix1 / matrix2
 cat("相除结果：", "\n")
 print(result)
+
 # 真正的矩阵相乘 符号为 %*%
+
 # 行合并
 x <- rbind(matrix1, matrix2)
 print(x)

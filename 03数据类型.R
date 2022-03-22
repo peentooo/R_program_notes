@@ -6,6 +6,7 @@ if (TRUE) {
     a <- c(3, 4, 7, 9)
     b <- c(5, 0, 5, 4)
     print(a + b) # 向量相加    8 4 12 13
+    print(a[-c(2:3)]) # 通过负整数来反取
     print(a[2]) # a向量的第二个元素    4
     print(a[1:3]) # 取出第1到3项    3 4 7
     print(a[c(1, 2, 4)]) # 取出第1,2,4项    3 4 9
@@ -24,11 +25,15 @@ if (TRUE) {
     print(sd(1:5)) # 1,2,3,4,5 的标准差
     # 向量生成
     print(c(1:5)) # 生成1到5
-    print(seq(1, 11, 2)) # 等差数列    1 3 5 7 9 11 公差为2
-    print(seq(2, 8, length.out = 4)) # 等差数列 2 4 6 8 数量为4个
+    #
+    print(seq(from = 1, to = 11, by = 2)) # 等差数列    1 3 5 7 9 11 公差为2
+    print(seq(1, 11, 2))
+    print(seq(2, 8, length.out = 4)) # 等差数列 2 4 6 8 长度为4个 这里的8指的是to=8
+    print(seq(from = 2, by = 2, length.out = 4)) # 这里步长是2
     print(rep(4, 6)) # 4 4 4 4 4 4
     print(c(NA, NA, NULL, NA, NULL)) # NULL没有意义
     print(length(c(NA, NULL))) # 1
+    print(mean(c(1, 2, 3, 4, NA), na.rm = TRUE)) # 忽略NA，否则将返回NA
     #
     # 逻辑向量
     verc3 <- c(1, 2, 3, 4, 5, 6)

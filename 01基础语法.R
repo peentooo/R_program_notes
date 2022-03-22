@@ -2,6 +2,8 @@ var_2 <- c("learn", "R")
 var_1 <- "123"
 var_3 <- 23L
 print(ls()) # 查看已定义的变量 "var_1" "var_2" "var_3"
+print(ls(all.names = T)) # 列出所有的，包括隐藏
+print(ls(pattern = "2")) # 列出包含2的
 
 rm(var_2) # 删除变量
 
@@ -10,7 +12,9 @@ cat(var_1, "中有", var_3, "\n") # 123 中有 23
 # 输出到文件，相对定位（默认覆盖写入
 cat("Ruboo", file = "files/1输出与追加输出.txt")
 # 输出到文件，绝对定位（默认覆盖写入
-cat("ruboo", file = "C:\\Users\\huang\\Desktop\\R_program\\files\\1输出与追加输出.txt")
+cat("ruboo",
+    file = "C:\\Users\\huang\\Desktop\\R_program_notes\\files\\1输出与追加输出.txt"
+)
 # 输出到文件，追加写入（append=true
 cat("GOOGLE", file = "files/1输出与追加输出.txt", append = TRUE)
 

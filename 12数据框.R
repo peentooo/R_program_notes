@@ -61,3 +61,12 @@ if (TRUE) {
     newtable12 <- rbind(table1, table2)
     print(newtable12)
 }
+
+# list 转化为数据框
+m <- list(x = 1:5, y = 6:10)
+m <- as.data.frame(m)
+print(m)
+# 矩阵转化为数据框
+n <- matrix(1:12, 3, 4)
+n <- as.data.frame(n)
+print(n)
